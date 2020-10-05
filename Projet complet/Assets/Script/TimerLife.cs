@@ -22,6 +22,9 @@ public class TimerLife : MonoBehaviour
     private Material doorMaterial;
     private AudioSource audioSource;
 
+    private const int VITESSE_MAX = 3;
+    private const float ACCELERATION = 0.3f;
+
     private void Start()
     {
         // Commence le timer automatiquement
@@ -91,9 +94,9 @@ public class TimerLife : MonoBehaviour
         //Le timer pour le score est en route
         timeScoring += Time.deltaTime;
         //Contrôle le nombre de porte et la vitesse
-        if (!(doorSpeed >= 3) && doorCreated == doorCounted)
+        if (!(doorSpeed >= VITESSE_MAX) && doorCreated == doorCounted)
         {
-            doorSpeed += 0.3f;
+            doorSpeed += ACCELERATION;
             doorCreated += 4;
         }
     }
