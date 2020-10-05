@@ -21,7 +21,7 @@ public class InstantiateDoors : MonoBehaviour
     private List<GameObject> listDoors;
     private int maxDoorsToCreate = 2;
 
-    private const int SPACE_BTW_DOORS = 20f;
+    private const float SPACE_BTW_DOORS = 20f;
     private const float POSITION_Z_PASSED = 0.5f;
     private const float POSITION_Z_DESTROY = -8.0f;
 
