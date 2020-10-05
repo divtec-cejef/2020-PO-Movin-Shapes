@@ -90,7 +90,7 @@ public class TimerLife : MonoBehaviour
     {
         //Le timer pour le score est en route
         timeScoring += Time.deltaTime;
-        //Contrôle le nombre de porte
+        //Contrôle le nombre de porte et la vitesse
         if (!(doorSpeed >= 3) && doorCreated == doorCounted)
         {
             doorSpeed += 0.3f;
