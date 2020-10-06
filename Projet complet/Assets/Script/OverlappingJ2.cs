@@ -21,9 +21,15 @@ public class OverlappingJ2 : MonoBehaviour
     {
     }
 
+    /// <summary>
+    /// Fonction cherchant si il y a une collision avec un collider
+    /// </summary>
+    /// <param name="other">Obtient le nom du collider touché</param>
     private void OnTriggerExit(Collider other)
     {
+        // Recherche le GameObject du collider
         GameObject gameObjectOther = other.gameObject;
+        // Retrouve le nom du parent du gameobject recherché
         parentBall = gameObjectOther.transform.parent.gameObject;
 
         //Regarde le nom parent si il est en erreur

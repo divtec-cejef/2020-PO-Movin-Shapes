@@ -107,14 +107,14 @@ public class TimerLife : MonoBehaviour
     /// </summary>
     public void ManageLife()
     {
-        
+        // Regarde si le mur est touché et si le timer est en cours de fonctionnement
         if (isWallHit && !timerIsRunning)
         {
             if (nbreVie == 0)
             {
                 SceneManager.LoadScene("End_Screen");
             }
-            //Si ce n'est pas le cas, une vie est enlevée
+            //Si ce n'est pas le cas, une vie est enlevée et un son est jouée
             else if (isDoorDifferent)
             {
                 audioSource.Play();
@@ -133,6 +133,7 @@ public class TimerLife : MonoBehaviour
                         doorMaterial.color = Color.red;
                     }
                 }
+                // Change la couleur de la porte
                 doorMaterial = doorToGetTL.GetComponent<Renderer>().material;
                 doorMaterial.color = Color.red;
             }

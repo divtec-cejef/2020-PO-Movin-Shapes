@@ -33,12 +33,15 @@ public class AddScore : MonoBehaviour
         //Affichage des vies
         textVies.text = "Vie(s): " + TimerLife.nbreVie;
 
+        // Regarde si le mur a été touché
         if (TimerLife.isWallHit == false)
         {
             if (InstantiateDoors.doorToDestroy != null)
             {
+                // Regarde la position de la porte
                 if (addPoints && InstantiateDoors.doorToDestroy.transform.position.z <= POSITION_Z_BEHIND)
                 {
+                    // Ajout des points
                     for (int pointsJ1 = 0; pointsJ1 < listBallToucheJ1.Count; pointsJ1++)
                     {
                         nbrePointsJ1 += listBallToucheJ1[pointsJ1];
@@ -61,6 +64,7 @@ public class AddScore : MonoBehaviour
                     
                 }
             }
+            // Affichage du score
             textScore.text = "Score: " + GameManager.Score;
         }
     }
