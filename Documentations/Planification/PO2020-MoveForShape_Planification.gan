@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2020-06-29" view-index="0" gantt-divider-location="437" resource-divider-location="300" version="2.8.11" locale="fr">
+    <description/>
+    <view zooming-state="default:7" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="287" order="0"/>
+        <field id="tpd4" name="Date de début" width="61" order="1"/>
+        <field id="tpd5" name="Date de fin" width="70" order="2"/>
+        <timeline><![CDATA[87,48]]></timeline>
+        <option id="color.recent"><![CDATA[#99ff99 #6699ff #f4f4f4]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Durée du projet" color="#6699ff" meeting="false" project="true" start="2020-04-27" duration="105" complete="0" thirdDate="2020-04-27" thirdDate-constraint="0" expand="true"/>
+        <task id="2" name="Trouver librairie de développement" color="#8cb6ce" meeting="false" start="2020-04-27" duration="5" complete="100" thirdDate="2020-04-27" thirdDate-constraint="0" priority="4" expand="true">
+            <depend id="16" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="87" name="Période Vacances" color="#99ff99" meeting="false" start="2020-07-06" duration="30" complete="0" thirdDate="2020-04-20" thirdDate-constraint="0" expand="true"/>
+        <task id="16" name="Trouver environnement de développement" color="#8cb6ce" meeting="false" start="2020-05-04" duration="6" complete="100" thirdDate="2020-04-20" thirdDate-constraint="0" expand="true">
+            <depend id="15" type="3" difference="0" hardness="Strong"/>
+        </task>
+        <task id="15" name="Se familiariser avec le langage de programmation" color="#000000" meeting="false" start="2020-05-04" duration="6" complete="100" thirdDate="2020-04-27" thirdDate-constraint="0" expand="true">
+            <depend id="33" type="2" difference="0" hardness="Strong"/>
+            <depend id="60" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="67" name="Tester la kinect" color="#8cb6ce" meeting="false" start="2020-05-04" duration="5" complete="100" thirdDate="2020-04-20" thirdDate-constraint="0" expand="true">
+            <depend id="13" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="13" name="Tester calibrage" color="#8cb6ce" meeting="false" start="2020-05-11" duration="5" complete="100" thirdDate="2020-04-20" thirdDate-constraint="0" expand="true">
+            <depend id="33" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="33" name="Faire premiers tests kinect/unity" color="#8cb6ce" meeting="false" start="2020-05-18" duration="5" complete="100" thirdDate="2020-04-20" thirdDate-constraint="0" expand="true">
+            <depend id="38" type="1" difference="0" hardness="Strong"/>
+        </task>
+        <task id="60" name="Faire premier tests unity" color="#8cb6ce" meeting="false" start="2020-05-12" duration="6" complete="100" thirdDate="2020-04-20" thirdDate-constraint="0" expand="true">
+            <depend id="155" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="38" name="Avoir un objet bougeant avec une partie de corps" color="#8cb6ce" meeting="false" start="2020-05-18" duration="5" complete="100" thirdDate="2020-04-20" thirdDate-constraint="0" expand="true">
+            <depend id="46" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="155" name="Se familiariser avec un éditeur de forme sur Unity" color="#8cb6ce" meeting="false" start="2020-05-20" duration="8" complete="0" thirdDate="2020-04-20" thirdDate-constraint="0" expand="true">
+            <depend id="39" type="3" difference="0" hardness="Strong"/>
+            <depend id="41" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="46" name="Changer un aspect d'un objet en fonction de sa position" color="#8cb6ce" meeting="false" start="2020-05-25" duration="10" complete="100" thirdDate="2020-04-20" thirdDate-constraint="0" expand="true"/>
+        <task id="39" name="Premier mouvement avec un mur" color="#8cb6ce" meeting="false" start="2020-05-25" duration="5" complete="100" thirdDate="2020-04-20" thirdDate-constraint="0" expand="true"/>
+        <task id="41" name="Faire des portes à aspect finale" color="#8cb6ce" meeting="false" start="2020-06-01" duration="5" complete="0" thirdDate="2020-04-20" thirdDate-constraint="0" expand="true"/>
+        <task id="50" name="Faire apparaître les points obtenues" color="#8cb6ce" meeting="false" start="2020-06-08" duration="5" complete="100" thirdDate="2020-04-20" thirdDate-constraint="0" expand="true"/>
+        <task id="77" name="Changer les points en fonction des parties du corps justes" color="#8cb6ce" meeting="false" start="2020-06-08" duration="14" complete="0" thirdDate="2020-04-20" thirdDate-constraint="0" expand="true"/>
+        <task id="85" name="Refaire système points" color="#8cb6ce" meeting="false" start="2020-07-06" duration="3" complete="0" thirdDate="2020-04-20" thirdDate-constraint="0" expand="true"/>
+        <task id="81" name="Trouver comment faire bouger un personnage fictif" color="#8cb6ce" meeting="false" start="2020-08-17" duration="5" complete="0" thirdDate="2020-04-20" thirdDate-constraint="0" expand="true"/>
+        <task id="91" name="Réajuster Portes" color="#8cb6ce" meeting="false" start="2020-08-17" duration="8" complete="0" thirdDate="2020-04-20" thirdDate-constraint="0" expand="true"/>
+        <task id="156" name="Recherche du décor" color="#8cb6ce" meeting="false" start="2020-08-18" duration="7" complete="0" thirdDate="2020-06-29" thirdDate-constraint="0" expand="true"/>
+        <task id="48" name="Faire apparaître les portes aléatoirement" color="#8cb6ce" meeting="false" start="2020-08-24" duration="5" complete="0" thirdDate="2020-04-20" thirdDate-constraint="0" expand="true"/>
+        <task id="158" name="Refaire gestion des points" color="#8cb6ce" meeting="false" start="2020-08-31" duration="5" complete="0" thirdDate="2020-06-29" thirdDate-constraint="0" expand="true"/>
+        <task id="169" name="Faire Intro" color="#8cb6ce" meeting="false" start="2020-08-31" duration="5" complete="0" thirdDate="2020-06-29" thirdDate-constraint="0" expand="true"/>
+        <task id="171" name="Faire Outro et classement" color="#8cb6ce" meeting="false" start="2020-09-07" duration="5" complete="0" thirdDate="2020-06-29" thirdDate-constraint="0" expand="true"/>
+        <task id="26" name="Avoir premier prototype" color="#8cb6ce" meeting="false" start="2020-09-07" duration="5" complete="0" thirdDate="2020-04-20" thirdDate-constraint="0" expand="true"/>
+        <task id="168" name="Faire Timer et portes rouges lorsqu'elles sont touchées" color="#8cb6ce" meeting="false" start="2020-09-07" duration="5" complete="0" thirdDate="2020-06-29" thirdDate-constraint="0" expand="true"/>
+        <task id="167" name="Améliorer le jeu" color="#8cb6ce" meeting="false" start="2020-09-14" duration="5" complete="0" thirdDate="2020-06-29" thirdDate-constraint="0" expand="true"/>
+        <task id="34" name="Faire test avec jeu de base" color="#8cb6ce" meeting="false" start="2020-09-14" duration="5" complete="0" thirdDate="2020-04-20" thirdDate-constraint="0" expand="true"/>
+        <task id="27" name="Faire dernière vérification" color="#8cb6ce" meeting="false" start="2020-09-21" duration="2" complete="0" thirdDate="2020-04-20" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Teva Koller" function="Default:0" contacts="" phone=""/>
+        <resource id="1" name="Théo Chapuis" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="26" resource-id="0" function="Default:0" responsible="false" load="50.0"/>
+        <allocation task-id="2" resource-id="0" function="Default:0" responsible="true" load="50.0"/>
+        <allocation task-id="15" resource-id="0" function="Default:0" responsible="true" load="50.0"/>
+        <allocation task-id="16" resource-id="0" function="Default:0" responsible="true" load="50.0"/>
+        <allocation task-id="60" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="39" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="41" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="48" resource-id="0" function="Default:0" responsible="true" load="25.0"/>
+        <allocation task-id="91" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="34" resource-id="0" function="Default:0" responsible="true" load="50.0"/>
+        <allocation task-id="27" resource-id="0" function="Default:0" responsible="true" load="50.0"/>
+        <allocation task-id="155" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="156" resource-id="0" function="Default:0" responsible="true" load="80.0"/>
+        <allocation task-id="169" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="171" resource-id="0" function="Default:0" responsible="true" load="80.0"/>
+        <allocation task-id="167" resource-id="0" function="Default:1" responsible="true" load="50.0"/>
+        <allocation task-id="26" resource-id="1" function="Default:0" responsible="false" load="50.0"/>
+        <allocation task-id="2" resource-id="1" function="Default:0" responsible="false" load="50.0"/>
+        <allocation task-id="15" resource-id="1" function="Default:0" responsible="false" load="50.0"/>
+        <allocation task-id="16" resource-id="1" function="Default:0" responsible="false" load="50.0"/>
+        <allocation task-id="13" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="33" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="38" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="46" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="50" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="77" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="67" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="85" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="81" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="48" resource-id="1" function="Default:0" responsible="false" load="75.0"/>
+        <allocation task-id="34" resource-id="1" function="Default:0" responsible="false" load="50.0"/>
+        <allocation task-id="27" resource-id="1" function="Default:0" responsible="false" load="50.0"/>
+        <allocation task-id="156" resource-id="1" function="Default:0" responsible="false" load="20.0"/>
+        <allocation task-id="171" resource-id="1" function="Default:0" responsible="false" load="20.0"/>
+        <allocation task-id="158" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="168" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="167" resource-id="1" function="Default:0" responsible="false" load="50.0"/>
+    </allocations>
+    <vacations>
+        <vacation start="2020-04-11" end="2020-04-25" resourceid="0"/>
+        <vacation start="2020-05-01" end="2020-05-02" resourceid="0"/>
+        <vacation start="2020-05-21" end="2020-05-23" resourceid="0"/>
+        <vacation start="2020-06-01" end="2020-06-02" resourceid="0"/>
+        <vacation start="2020-06-11" end="2020-06-12" resourceid="0"/>
+        <vacation start="2020-06-23" end="2020-06-24" resourceid="0"/>
+        <vacation start="2020-07-03" end="2020-08-17" resourceid="0"/>
+        <vacation start="2020-05-01" end="2020-05-02" resourceid="1"/>
+        <vacation start="2020-05-21" end="2020-05-23" resourceid="1"/>
+        <vacation start="2020-06-01" end="2020-06-02" resourceid="1"/>
+        <vacation start="2020-06-23" end="2020-06-24" resourceid="1"/>
+        <vacation start="2020-07-03" end="2020-08-17" resourceid="1"/>
+        <vacation start="2020-06-11" end="2020-06-12" resourceid="1"/>
+        <vacation start="2020-04-11" end="2020-04-25" resourceid="1"/>
+    </vacations>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
